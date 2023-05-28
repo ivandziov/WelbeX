@@ -21,7 +21,7 @@ class CargoViewSet(viewsets.ViewSet):
                                          context={
                                              'max_distance': max_distance_to_cargo if max_distance_to_cargo else 450,
                                              'car_queryset': car_queryset,
-                                             },
+                                         },
                                          )
         data = serializer.data
         return Response(data)
